@@ -45,6 +45,17 @@ config IMPLIED_BY_TRI_DEP
 
 endmenu
 
+menu "ddr feature"
+config DDC
+	bool "ddc feature"
+	default n
+
+config DERATE
+	bool "derate feature"
+	default y
+
+endmenu
+
 
 menu "String, int, and hex symbols"
 
@@ -58,6 +69,21 @@ config INT
 
 config HEX
 	hex "Hex symbol"
+	depends on CUSTOMER
+	default 0xABC
+
+endmenu
+
+
+menu "Support Customer Timings Setting"
+
+config CUSTOMER
+	bool "Support Customer Timing"
+	default n
+
+config DRAMTIMG0
+	hex "dramtmg0"
+	depends on CUSTOMER
 	default 0xABC
 
 endmenu

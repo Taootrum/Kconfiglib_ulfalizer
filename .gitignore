@@ -2,3 +2,5 @@
 build/
 *.egg-info/
 dist/
+.config
+.config.old

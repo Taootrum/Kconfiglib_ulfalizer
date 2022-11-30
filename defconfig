@@ -1,0 +1,3 @@
+# CONFIG_MODULES is not set
+# CONFIG_DERATE is not set
+CONFIG_TRI_CHOICE_SYM_1=y
